@@ -9,7 +9,7 @@ GO
 USE master
 GO
 if exists (select * from sysdatabases where name='Northwind')
-		drop database Northwind
+    set noexec on
 go
 
 DECLARE @device_directory NVARCHAR(520)
@@ -9338,3 +9338,6 @@ ALTER TABLE EmployeeTerritories
 		[TerritoryID]
 	)
 GO
+
+set noexec off
+go
