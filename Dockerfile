@@ -1,5 +1,5 @@
 # We choose exact tag (not 'latest'), to be sure that new version wont break creating image
-FROM mcr.microsoft.com/mssql/server:2017-CU17-ubuntu
+FROM mcr.microsoft.com/mssql/server:2019-CU12-ubuntu-20.04
 
 # Create app directory
 RUN mkdir -p /usr/src/app
