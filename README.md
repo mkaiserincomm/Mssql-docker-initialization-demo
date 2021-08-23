@@ -60,4 +60,3 @@ Choose _SQL Server Authentication_ and provide _sa_ user with password from Dock
 **Problems with SSMS:** [Upgrade _SSMS_ to the newest version. At the time of writing, you need to restart _SSMS_ every time you start new container, to have new internal name of DB updated.](https://www.softwaredeveloper.blog/mssms-invalid-urn-filter-on-server)
 
 **Problems with started container:** [Be careful to have Unix line endings style in scripts which you pass to image, as Windows style may cause problems (usually with not clear message).](https://www.softwaredeveloper.blog/docker-run-problem-no-such-file-or-directory-or-other-strange-message)
-
