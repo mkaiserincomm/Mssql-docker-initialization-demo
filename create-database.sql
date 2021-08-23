@@ -2,14 +2,14 @@
 ** Copyright Microsoft, Inc. 1994 - 2000
 ** All Rights Reserved.
 */
-
+:ON ERROR EXIT
 SET NOCOUNT ON
 GO
 
 USE master
 GO
 if exists (select * from sysdatabases where name='Northwind')
-    set noexec on
+    THROW 50000, 'Northwind database already exists', 1;
 go
 
 DECLARE @device_directory NVARCHAR(520)
@@ -9338,6 +9338,3 @@ ALTER TABLE EmployeeTerritories
 		[TerritoryID]
 	)
 GO
-
-set noexec off
-go
